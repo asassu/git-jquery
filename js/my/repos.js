@@ -15,7 +15,7 @@ function myRepos(){
          console.log('boop')  
         
         // Q. Why are these templates files stored in a separate folder inside contents/?
-        $.get("/git-jquery/templates/myrepoList.jade", function(template) {
+        $.get("/git-jquery/templates/repoList.jade", function(template) {
 
             // render the template
             var html = jade.render(template, {items: repos})            

@@ -12,7 +12,7 @@ function myRepo(full_name){
         var repo = data
         // console.log(repo)
 
-        $.get("/git-jquery/templates/myrepoView.jade", function(template) {
+        $.get("/git-jquery/templates/repoView.jade", function(template) {
 
             var html = jade.render(template, {item: repo})
             
